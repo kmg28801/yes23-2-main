@@ -15,8 +15,8 @@ public class Delivery {
     private String status;
     private String deliveryInfo;
 
-    @PostUpdate
-    public void onPostUpdate(){
+    @PostPersist
+    public void onPostPersist(){
         Shipped shipped = new Shipped();
         BeanUtils.copyProperties(this, shipped);
         shipped.publishAfterCommit();
