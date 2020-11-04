@@ -17,9 +17,15 @@ public class Pay {
 
     @PostPersist
     public void onPostPersist() {
-        PayConfirmed payConfirmed = new PayConfirmed();
-        BeanUtils.copyProperties(this, payConfirmed);
-        payConfirmed.publishAfterCommit();
+        if(this.getStatus().equals("Payed")){
+            PayConfirmed payConfirmed = new PayConfirmed();
+            BeanUtils.copyProperties(this, payConfirmed);
+            payConfirmed.publishAfterCommit();
+        }else if(this.getStatus().equals("Pay Canceled")){
+            PayCancelled payCancelled = new PayCancelled();
+            BeanUtils.copyProperties(this, payCancelled);
+            payCancelled.publishAfterCommit();
+        }
 
     }
 

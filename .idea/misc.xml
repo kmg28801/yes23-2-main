@@ -4,6 +4,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/yes23-2-main/order/pom.xml" />
+        <option value="$PROJECT_DIR$/yes23-2-main/delivery/pom.xml" />
+        <option value="$PROJECT_DIR$/yes23-2-main/cancel/pom.xml" />
+        <option value="$PROJECT_DIR$/yes23-2-main/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/yes23-2-main/pay/pom.xml" />
       </list>
     </option>
   </component>

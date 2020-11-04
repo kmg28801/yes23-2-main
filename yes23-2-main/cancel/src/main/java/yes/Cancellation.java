@@ -14,8 +14,8 @@ public class Cancellation {
     private Long orderId;
     private String status;
 
-    @PostUpdate
-    public void onPostUpdate(){
+    @PostPersist
+    public void onPostPersist(){
         DevlieryCancelled devlieryCancelled = new DevlieryCancelled();
         BeanUtils.copyProperties(this, devlieryCancelled);
         devlieryCancelled.publishAfterCommit();

@@ -81,3 +81,5 @@ api:
   pay:
     url: http://pay:8080
 
+  cancel:
+    url: http://cancel:8080

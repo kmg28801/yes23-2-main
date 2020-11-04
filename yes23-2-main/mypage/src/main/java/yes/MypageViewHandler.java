@@ -65,6 +65,7 @@ public class MypageViewHandler {
                     mypage.setStatus(devlieryCancelled.getStatus());
                     // view 레파지 토리에 save
                     mypageRepository.save(mypage);
+
                 }
             }
         }catch (Exception e){

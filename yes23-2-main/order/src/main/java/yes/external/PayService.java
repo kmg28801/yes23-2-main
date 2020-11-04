@@ -17,5 +17,6 @@ public interface PayService {
 
     @RequestMapping(method= RequestMethod.POST, path="/pays")
     public void paymentcancel(@RequestBody Pay pay);
+
     
 }

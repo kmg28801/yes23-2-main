@@ -3,6 +3,8 @@ yes\AbstractEvent$1.class
 yes\Shipped.class
 yes\DevlieryCancelled.class
 yes\external\Pay.class
+yes\external\CancellationService.class
+yes\external\Cancellation.class
 yes\Order.class
 yes\external\PayService.class
 yes\OrderController.class

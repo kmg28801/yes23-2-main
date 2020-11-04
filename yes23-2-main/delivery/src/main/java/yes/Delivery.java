@@ -21,7 +21,6 @@ public class Delivery {
         BeanUtils.copyProperties(this, shipped);
         shipped.publishAfterCommit();
 
-
     }
 
 
